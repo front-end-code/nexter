@@ -161,9 +161,19 @@ body {
     fill: #c69963;
     width: 2.5rem;
     height: 2.5rem;
-    z-index: 2; }
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem 1rem 0 0; }
   .home__name {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #101d2c;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize; }
   .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
     fill: #c69963;
     width: 2rem;

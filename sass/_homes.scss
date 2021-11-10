@@ -24,10 +24,20 @@
         width: 2.5rem;
         height: 2.5rem;
         z-index: 2;
+        justify-self: end;
+        margin: 1rem 1rem 0 0;
     }
 
     &__name {
         grid-column: 1 / -1;
+        font-family: $font-display;
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: $color-secondary;
+        color: $color-white;
+        font-weight: 400;
+        text-transform: capitalize;
     }
 
     &__location,

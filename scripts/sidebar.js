@@ -11,4 +11,4 @@ window.addEventListener("click", (e) => {
       sideBar.classList.remove("toggle-sidebar");
     }
 });
-*\
+*/

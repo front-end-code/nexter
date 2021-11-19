@@ -73,14 +73,22 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  z-index: 30;
+  width: 8rem;
+  transition: width .3s; }
   .sidebar__btn-wrapper {
+    position: fixed;
+    top: 4rem;
+    left: 1.8rem;
     display: flex;
     align-items: center;
     cursor: pointer;
     width: 4.5rem;
-    margin: 4rem auto;
     height: 3rem; }
+
+.toggle-sidebar {
+  width: 30rem; }
 
 .nav-btn {
   border: none;

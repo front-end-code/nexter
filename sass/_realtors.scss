@@ -35,4 +35,10 @@
             grid-template-columns: repeat(3, min-content max-content);
         }
     }
+
+    @media only screen and (max-width: $bp-small) {
+        &__list {
+            grid-template-columns: min-content max-content;
+        }
+    }
 }

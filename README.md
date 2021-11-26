@@ -1,2 +1,2 @@
 ﻿# Nexter Project from CSS Tutorial
-# Tutorial was made by Mark
+# Tutorial was made by Jonas Schmedtmann

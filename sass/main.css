@@ -47,6 +47,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 50em) {
+  .container {
+    -ms-grid-rows: 8rem calc(100vh - 8rem) min-content min-content 40vw (min-content)[3];
+        grid-template-rows: 8rem calc(100vh - 8rem) -webkit-min-content -webkit-min-content 40vw repeat(3, -webkit-min-content);
+        grid-template-rows: 8rem calc(100vh - 8rem) min-content min-content 40vw repeat(3, min-content);
+    -ms-grid-columns: [full-start] minmax(6rem, 1fr) [center-start] ([col-start] minmax(min-content, 14rem) [col-end])[8] [center-end] minmax(6rem, 1fr) [full-end];
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
+}
+
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -260,6 +271,12 @@ body {
           filter: brightness(70%);
 }
 
+@media only screen and (max-width: 50em) {
+  .header {
+    grid-column: 1 / -1;
+  }
+}
+
 .realtors {
   background-color: #101d2c;
   grid-column: col-start 7 / full-end;
@@ -297,6 +314,12 @@ body {
 .realtors__sold {
   text-transform: uppercase;
   color: #aaa;
+}
+
+@media only screen and (max-width: 50em) {
+  .realtors {
+    grid-column: 1 / -1;
+  }
 }
 
 .features {

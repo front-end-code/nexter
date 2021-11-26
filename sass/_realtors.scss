@@ -27,4 +27,8 @@
         text-transform: uppercase;
         color: $color-grey-light-2;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1 / -1;
+    }
 }

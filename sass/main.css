@@ -699,6 +699,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .gallery {
+    grid-gap: .5rem;
+    padding: .5rem;
+  }
+}
+
 .footer {
   background-color: #101d2c;
   grid-column: full-start / full-end;

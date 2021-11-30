@@ -38,7 +38,7 @@
 
     @media only screen and (max-width: $bp-small) {
         &__list {
-            grid-template-columns: min-content max-content;
+            grid-template-columns: min-content max-content; 
         }
     }
 }
